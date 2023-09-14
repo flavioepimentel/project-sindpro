@@ -9,13 +9,17 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon" href="./src/images/favicon.ico">
     <link rel="stylesheet" href="../Layout/style.css">
-    <!-- <link rel="stylesheet" href="../Home/style.css"> -->
+    <link rel="stylesheet" href="../Contact/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>SindPro | Contato </title>
 
 </head>
 
 <body>
-    <header>
+    <header style="margin-bottom: 50px;">
         <div>
             <nav id="navbar_head" class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid ">
@@ -48,10 +52,26 @@
             </nav>
         </div>
     </header>
-    <section>
-        <div></div>
+    <section class=" container_form_contact">
+        <div class="container container_form_contact">
+            <div class="w3-card">
+                <div id="container_form_content">
+                    <div class="mb-3">
+                        <label for="email_sender" class="form-label">Seu endereço de e-mail</label>
+                        <input type="email" class="form-control" id="email_sender" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="textarea_email" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="textarea_email" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <button type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer class="footer__layout">
+    <footer style="margin-top: 50px;" class="footer__layout">
         <div id="container_footer">
             <nav>
                 <div id="container_menu_footer">
