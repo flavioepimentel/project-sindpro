@@ -1,0 +1,101 @@
+@font-face {
+    font-family: "Metropolis 1920";
+    src: url("src/fonts/metropolisfont/METROPOLIS 1920/Metropolis 1920.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Pier";
+    src: url("src/fonts/pierrefont85948/pier.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ikaros";
+    src: url("src/fonts/Ikaros/Ikaros.ttf");
+}
+
+@font-face {
+    font-family: "SonderSans-Black";
+    src: url("src/fonts/Sonder/Sonder/SonderSans-Black.otf")format("opentype");
+}
+
+@font-face {
+    font-family: "SonderSans-BlackRough";
+    src: url("src/fonts/Sonder/Sonder/SonderSans-BlackRough.otf")format("opentype");
+}
+
+@font-face {
+    font-family: "SonderSerif-Bold";
+    src: url("src/fonts/Sonder/Sonder/SonderSerif-Bold.otf")format("opentype");
+}
+
+
+
+#carousel_section {
+    margin-top: -5px;
+    z-index: -1;
+    border-bottom: 2px solid #f4c430;
+}
+
+.carousel-item {
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    align-content: center;
+    opacity: 65%;
+}
+
+#span_brand {
+    background-color: #053e6b;
+    color: #f4c430;
+    font-family: "Ikaros";
+    padding: 10px 3px 10px 10px;
+    font-size: larger;
+}
+
+#span_brand_2 {
+    background-color: #053e6b;
+    font-family: "Ikaros";
+    margin-left: -10.41px;
+    padding: 10px 10px 10px 0px;
+    color: white;
+    font-size: larger;
+}
+
+#services_section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}
+
+#services_section,
+.p_services_sell {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    color: black
+}
+
+.w3-display-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 95%;
+
+}
+
+.w3-card-4 {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.service_img {
+    margin-bottom: 3px;
+    height: 200px;
+    width: 200px;
+    border-bottom: 0.5px solid #a3a3a388;
+}
