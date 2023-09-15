@@ -49,6 +49,12 @@
     opacity: 65%;
 }
 
+.brand,
+h1 {
+    text-shadow: 2px 2.5px black;
+}
+
+
 #span_brand {
     background-color: #053e6b;
     color: #f4c430;
@@ -98,6 +104,41 @@
     -o-border-radius: 5px;
 }
 
+.slide-fwd-right {
+    -webkit-animation: slide-fwd-right 0.4s linear both;
+    animation: slide-fwd-right 0.4s linear both;
+}
+
+@-webkit-keyframes slide-fwd-right {
+    0% {
+        -webkit-transform: translateZ(0) translateX(0);
+        transform: translateZ(0) translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(800px) translateX(-100px);
+        transform: translateZ(800px) translateX(-100px);
+        -moz-transform: translateZ(800px) translateX(-100px);
+        -ms-transform: translateZ(800px) translateX(-100px);
+        -o-transform: translateZ(800px) translateX(-100px);
+    }
+}
+
+@keyframes slide-fwd-right {
+    0% {
+        -webkit-transform: translateZ(0) translateX(0);
+        transform: translateZ(0) translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateZ(800px) translateX(10px);
+        transform: translateZ(800px) translateX(10px);
+        -moz-transform: translateZ(800px) translateX(10px);
+        -ms-transform: translateZ(800px) translateX(10px);
+        -o-transform: translateZ(800px) translateX(10px);
+    }
+}
+
 .service_img {
     margin-bottom: 3px;
     height: 200px;
@@ -108,8 +149,16 @@
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    #maket_img_carousel {
-        height: 250px
+
+    .carousel-item {
+        height: 180px;
+    }
+
+    #div_container_brand_carousel,
+    #carouselExampleAutoplaying,
+    .carousel-inner,
+    #carousel_section {
+        height: 182px;
     }
 }
 
@@ -118,6 +167,11 @@
     #maket_img_carousel {
         height: 250px
     }
+
+    #div_container_brand_carousel {
+        z-index: -1;
+        height: 250px;
+    }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -125,6 +179,8 @@
     #maket_img_carousel {
         height: 450px
     }
+
+
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
