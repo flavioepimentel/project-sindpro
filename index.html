@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     <title>SindPro | Inicio</title>
-
+    <script data-main="scripts/main" src="scripts/require.js"></script>
 </head>
 
 <body>
@@ -54,7 +54,7 @@
         </div>
     </header>
     <section id="carousel_section">
-        <div>
+        <div id="div_container_brand_carousel">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div id="carousel_item_1" class="carousel-item active">
@@ -85,8 +85,10 @@
                 </div>
                 <div class="w3-display-middle w3-margin-top w3-center">
                     <h1>
-                        <span id="span_brand" class=" w3-opacity-min"><b>Sind</b></span>
-                        <span id="span_brand_2" class="w3-opacity-min">Pro</span>
+                        <span id="span_brand" class=" w3-opacity-min"><b class="brand">Sind</b></span>
+                        <span id="span_brand_2" class="w3-opacity-min">
+                            <p class="brand">Pro</p>
+                        </span>
                     </h1>
                 </div>
             </div>
@@ -94,7 +96,7 @@
     <section id="services_section" class="w3-container">
         <div class="w3-row-padding">
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card-4 w3-hover-shadow">
+                <div class="w3-card-4 slide-fwd-right">
                     <div class="w3-display-container">
                         <img class="service_img" src="./src/images/House-build.svg" alt="House" style="width:100%">
                         <!-- https://icons8.com/illustrations/illustration/clip-online-real-estate-consultant -->
@@ -104,7 +106,7 @@
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card-4">
+                <div class="w3-card-4 slide-fwd-right">
                     <div class="w3-display-container">
                         <img class="service_img" src="./src/images/Houses-bro.svg" alt="House" style="width:100%">
                         <p class="p_services_sell">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam nam
@@ -113,7 +115,7 @@
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card-4">
+                <div class="w3-card-4 slide-fwd-right">
                     <div class="w3-display-container">
                         <img class="service_img" src="./src/images/teamwork high five-pana.svg" alt="House"
                             style="width:100%">
@@ -123,7 +125,7 @@
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <div class="w3-card-4">
+                <div class="w3-card-4 slide-fwd-right">
                     <div class="w3-display-container">
                         <img class="service_img" src="./src/images/Houses-amico.svg" alt="House" style="width:100%">
                         <p class="p_services_sell">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam nam
@@ -132,7 +134,11 @@
                 </div>
             </div>
         </div>
+
     </section>
+    <a href="https://api.whatsapp.com/send/?phone=5521972002707&text=Tenho+interesse+em+saber+mais+sobre+a+SindPro&type=phone_number&app_absent=0"
+        class="whatsApp" target="_blank">
+        <img src="./src/images/wpp.svg" /></a>
     <footer class="footer__layout">
         <div id="container_footer">
             <nav>
@@ -179,6 +185,7 @@
                 SindPro © Copyright | Desenvolvido por Pardes Analytics
             </div>
         </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
