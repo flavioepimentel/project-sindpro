@@ -1,8 +1,20 @@
+.whatsApp {
+    /* Safari */
+    position: -webkit-sticky;
+    position: sticky;
+    height: 60px;
+    bottom: 30px;
+    right: 4px;
+    left: 8000px;
+}
+
+
 #navbar_head {
     border-radius: 6px;
-    -webkit-box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.72);
-    -moz-box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.72);
-    box-shadow: 0px 9px 21px 0px rgba(0, 0, 0, 0.72);
+    border-color: 2px solid #95969bce;
+    -webkit-box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
@@ -24,7 +36,9 @@
 p {
     display: inline;
     margin-left: 5px;
+    text-shadow: 1px 0.158px black;
 }
+
 
 .p_endereco {
     font-size: smaller;
@@ -123,6 +137,12 @@ a {
         flex-direction: column;
         justify-content: center;
         margin: auto;
+    }
+
+    span,
+    b,
+    p {
+        font-size: xx-large;
     }
 }
 
