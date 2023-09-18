@@ -1,0 +1,16 @@
+#section_about {
+    margin-top: 60px;
+}
+
+#container_text_about {
+    margin-left: 18px;
+    margin-bottom: 25px;
+}
+
+p,
+h1,
+h2,
+h3,
+b {
+    font-size: 1rem;
+}
