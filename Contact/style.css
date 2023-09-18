@@ -6,11 +6,35 @@
 
 #item_message_to_user,
 p {
-    width: 450px;
     font-size: 1rem;
 }
 
-#section_form_contact {}
+#send_email_button {
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow, transform;
+    background: radial-gradient(100% 100% at 100% 0%, #5579f1 0%, #3c4fe0 100%);
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em;
+    border-radius: 0.3em;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+#send_email_button:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+}
+
+#send_email_button:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+}
 
 #form_content {
     display: flex;
@@ -127,14 +151,18 @@ textarea {
         margin-top: 50px;
     }
 
-    .mb-3 {
+    .w3-display-container {
         min-width: 100px;
+    }
+
+    .mb-3 {
+        width: 90%;
     }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 575.99px) and (max-width: 767.98px) {
-    .mb-3 {
+    .w3-display-container {
         min-width: 200px;
     }
 }
@@ -161,7 +189,8 @@ textarea {
 
     .w3-card,
     #form_content,
-    .container_form_contact {
+    .container_form_contact,
+    .w3-display-container {
         width: 450px;
         height: 330px;
     }
