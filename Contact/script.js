@@ -28,5 +28,27 @@ const html = `<h1>Hello Word</h1>`
 function sendEmail() {
     const email = getEmailSender()
     const mensage = getMessage()
-    console.log(email, mensage)
+    return (email, mensage)
 }
+
+
+const API_LOCAWEB = "https://api.smtplw.com.br/v1/messages"
+// content-type: application/json
+/// x-auth-token: 7sd6g8f7sdg78fsdg7fsd
+
+const obj = {
+    "subject": "Contato por WebSite", //"Titulo"
+    "body": mensage, // Texto principal
+    "from": email, //"remetente@dominio.com"
+    "to": "contato@sindpro.net", // "destinatario@dominio2.com"
+    "cc": [],
+    "bcc": [],
+    "headers": {
+        "Content-Type": "text/plain"
+    }
+}
+
+
+// RESPOSTA:
+// Status: 201 Created
+// Location: https://api.smtplw.com.br/v1/messages/25
