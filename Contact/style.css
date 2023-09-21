@@ -143,11 +143,31 @@ textarea {
     }
 }
 
+@media (max-width: 280.5px) {
+
+    #section_form_contact,
+    #item_message_to_user,
+    #container_form_contact,
+    .w3-col,
+    .mb-3 {}
+
+    .mb-3,
+    .w3-card,
+    .form-label {}
+
+    #form_content {}
+
+    input,
+    textarea,
+    label,
+    #form_content {}
+}
+
 @media (max-width: 575.98px) {
 
     #item_message_to_user,
     #container_form_contact {
-        width: 250px;
+        width: 320px;
         margin-top: 50px;
     }
 
@@ -157,6 +177,10 @@ textarea {
 
     .mb-3 {
         width: 90%;
+    }
+
+    #form_content {
+        width: 320px;
     }
 }
 
