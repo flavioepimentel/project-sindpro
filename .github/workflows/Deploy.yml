@@ -1,6 +1,9 @@
 name: Deploy via ftp
 on: push
 jobs:
+  teste:
+    - name: List files in the workspace directory
+      run: ls /github/workspace
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
