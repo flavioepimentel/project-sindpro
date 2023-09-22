@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Pier";
+    src: url("src/fonts/pierrefont85948/pier.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Ikaros";
+    src: url("src/fonts/Ikaros/Ikaros.ttf");
+}
+
 #section_about {
     display: flex;
     flex-direction: column;
@@ -6,17 +16,47 @@
 
 #container_about {
     margin-bottom: 25px;
-    background-image: url("https://images.pexels.com/photos/13646959/pexels-photo-13646959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    color: rgb(233, 233, 233);
     text-decoration: solid;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.logo_black_white {
+    width: 60%;
+    z-index: -1;
+    background-image: url("../src/images/logo-black-white.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 95%;
+    margin-right: -50px;
+    margin-bottom: -170px;
+    opacity: 40%;
+
+}
+
+#process_container {
+    background-image: url("https://images.pexels.com/photos/13646959/pexels-photo-13646959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    color: white;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    text-shadow: 1px 1px black;
+    border-top: 2px solid #f4c430;
+    border-bottom: 3px solid #e2b586;
+    display: flex;
+
+}
+
+#process_image {
+    max-width: 730px;
+    max-height: 490px;
 }
 
 #text_about {
-    max-width: 550px;
+    width: 65%;
     margin-left: 10px;
     margin-bottom: 25px;
     margin-top: 20px;
@@ -27,7 +67,20 @@
     display: flex;
     align-content: end;
     align-items: center;
+    text-align: center;
 
+}
+
+#h1_who_we_are {
+    z-index: -100;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Ikaros";
+    font-weight: bolder;
+    text-align: center;
 }
 
 p,
@@ -36,13 +89,35 @@ h2,
 h3,
 b {
     font-size: 1rem;
-
 }
 
 p,
-h2,
-h3,
 b {
-    text-shadow: 1px 1px black;
+    color: #8d8c8d;
+}
 
+
+.section_resons_why {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.div_why_sindpro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img_why_sindpro {
+    height: 150px;
+    border-bottom: 1px solid #e2b586;
+}
+
+.p_answer_why {
+    text-align: center;
+    max-width: 200px;
 }
