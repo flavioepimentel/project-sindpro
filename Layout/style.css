@@ -38,9 +38,21 @@ p {
     text-shadow: 0.5px 0.10px black;
 }
 
+h1,
+h2,
+h3 {
+    font-family: "Ikaros";
+
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
 
 .p_endereco {
-    font-size: smaller;
+    font-size: 15px;
     color: white;
 }
 
@@ -67,6 +79,7 @@ p {
     z-index: 1;
     font-family: inherit;
     color: #eead2d;
+
 }
 
 .button_footer::before {
@@ -139,11 +152,7 @@ a {
         margin: auto;
     }
 
-    span,
-    b,
-    p {
-        font-size: xx-large;
-    }
+
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
