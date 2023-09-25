@@ -29,9 +29,9 @@
 .logo_black_white {
     text-align: center;
     z-index: -1;
-    background-image: url("../src/images/logo-black-white.svg");
+    /* background-image: url("../src/images/logo-black-white.svg");
     background-repeat: repeat-y;
-    background-position: center bottom;
+    background-position: center bottom; */
 
 }
 
