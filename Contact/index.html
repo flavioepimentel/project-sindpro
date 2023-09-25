@@ -54,33 +54,30 @@
         </div>
     </header>
     <section id="section_form_contact" class="w3-container">
-        <div class="container w3-row-padding" id="container_form_contact">
-            <div class="w3-col 2 m6 w3-margin-bottom"></div>
-            <div class="w3-card scale-up-tl">
+        <div class="container w3-row-padding" id="div_container_contact_contente">
+            <div class="w3-card-4 scale-up-tl">
                 <div class="w3-display-container" id="form_content">
                     <div class="mb-3">
                         <label for="email_sender" class="form-label">Seu endereço de e-mail</label>
-                        <input type="email" class="form-control" id="email_sender" placeholder="name@example.com">
+                        <input type="email" class="form-control" id="email_sender" placeholder="email@examplo.com"
+                            required>
                     </div>
                     <div class="mb-3">
                         <label for="textarea_email" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="textarea_email" rows="3"></textarea>
+                        <textarea class="form-control" id="textarea_email" rows="3" placeholder="Sua mensagem."
+                            required></textarea>
                     </div>
                     <div>
                         <button id="send_email_button" onclick=sendEmail() type="button">Enviar</button>
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="container w3-col 13 m6 w3-margin-bottom" id="item_message_to_user">
-                    <div class="w3-display-container "></div>
-                    <h1 class="slide-fwd-top">Agende agora seu atendimento!</h1>
+            <div class="container" id="item_message_to_user">
+                <h1 class="slide-fwd-top">Agende agora seu atendimento!</h1>
 
-                    <p> Entenda como a gestão profissinal e eficiente de condomínios pode trazer
-                        mais transparência a gestão do seu condomínio.</p>
-                </div>
+                <p> Entenda como a gestão profissinal e eficiente de condomínios pode trazer
+                    mais transparência a gestão do seu condomínio.</p>
             </div>
-        </div>
         </div>
     </section>
     <a href="https://api.whatsapp.com/send/?phone=5521960202026&text=Tenho+interesse+em+saber+mais+sobre+a+SindPro&type=phone_number&app_absent=0"
