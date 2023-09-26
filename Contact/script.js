@@ -14,7 +14,7 @@ function emailConstruction (email, mensage) {
     "subject": "Contato por WebSite", //"Titulo"
     "body": mensage, // Texto principal
     "from": email, //"remetente@dominio.com"
-    "to": "flavio.ericksan@hotmail.com", // "destinatario@dominio2.com" | "contato@sindpro.net"
+    "to": "flavio.ericksan@hotmail.com", // "destinatario@dominio2.com" | "contato@sindpro.net.br"
     "cc": [],
     "bcc": [],
     "headers": {
