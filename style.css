@@ -55,6 +55,17 @@ h1 {
     font-size: 3rem;
 }
 
+.descr_sindico_profissional {
+    background-color: #053e6b;
+    padding: 22px 15px 15px 15px;
+}
+
+.sub_brand {
+    text-shadow: 1.5px 2px black;
+    color: white;
+    font-size: 1.8rem;
+
+}
 
 #span_brand {
     background-color: #053e6b;
