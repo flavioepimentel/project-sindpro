@@ -15,6 +15,7 @@
 
 
 #navbar_head {
+    background-color: #1D4A79;
     border-radius: 6px;
     border-color: 2px solid #95969bce;
     -webkit-box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.5);
@@ -25,6 +26,10 @@
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
 
+}
+
+.nav-link {
+    color: white;
 }
 
 #container_menu_footer {
